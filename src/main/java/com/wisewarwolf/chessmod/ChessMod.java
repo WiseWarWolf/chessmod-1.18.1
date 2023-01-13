@@ -1,5 +1,6 @@
 package com.wisewarwolf.chessmod;
 
+import com.wisewarwolf.chessmod.block.ModBlocks;
 import com.wisewarwolf.chessmod.item.ModItems;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
@@ -34,6 +35,7 @@ public class ChessMod
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.register(eventBus);
+        ModBlocks.register(eventBus);
 
         eventBus.addListener(this::setup);
         // Register ourselves for server and other game events we are interested in
