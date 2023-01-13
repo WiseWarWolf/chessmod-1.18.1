@@ -1,6 +1,7 @@
 package com.wisewarwolf.chessmod.block;
 
 import com.wisewarwolf.chessmod.ChessMod;
+import com.wisewarwolf.chessmod.item.ModCreativeModTab;
 import com.wisewarwolf.chessmod.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
@@ -22,7 +23,7 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> CHESS_BOARD = registerBlock("chess_board",
             () -> new Block(BlockBehaviour.Properties.of(Material.WOOD).requiresCorrectToolForDrops().sound(SoundType.WOOD)
-                    .strength(1f)), CreativeModeTab.TAB_MISC);
+                    .strength(1f)), ModCreativeModTab.CHESS_TAB);
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab) {
