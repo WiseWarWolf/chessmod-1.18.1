@@ -25,6 +25,10 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.of(Material.WOOD).requiresCorrectToolForDrops().sound(SoundType.WOOD)
                     .strength(1f)), ModCreativeModTab.CHESS_TAB);
 
+    public static final RegistryObject<Block> CHESS_GRID = registerBlock("chess_grid",
+            () -> new Block(BlockBehaviour.Properties.of(Material.WOOL).requiresCorrectToolForDrops().sound(SoundType.WOOL)
+                    .strength(1f)), ModCreativeModTab.CHESS_TAB);
+
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab) {
 

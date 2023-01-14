@@ -5,6 +5,7 @@
   "item.chessmod.black_queen": "Black Queen",
 
   "block.chessmod.chess_board": "Chess Board",
+  "block.chessmod.chess_grid": "Chess Grid",
 
   "itemGroup.chesstab": "Chess tab"
 }
